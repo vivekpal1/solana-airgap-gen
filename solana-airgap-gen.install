@@ -1,0 +1,13 @@
+post_install() {
+  echo "==================================================="
+  echo "WARNING: Verify the following before first use:"
+  echo "1. System is completely airgapped"
+  echo "2. All network interfaces are disabled"
+  echo "3. No external storage devices are connected"
+  echo "4. Secure erase all temporary files after use"
+  echo "==================================================="
+}
+
+post_upgrade() {
+  post_install
+}
